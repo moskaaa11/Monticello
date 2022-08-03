@@ -1,0 +1,121 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin:0 auto;
+    max-width: 1600px;
+
+    @media (max-width: $tab) {
+        margin: 0 16px;
+    }
+}   
+
+.menu {
+    font-family: $anotuher_font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-menu;
+}
+
+.h1 {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    color: $color-menu;
+}
+
+.h2 {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+    color: $color-menu;
+}
+
+.h3 {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: $color-text;
+}
+
+.h4 {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: $color-text;
+}
+
+.h5 {
+    font-family: $sub-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-text;
+}
+
+.button {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-black;
+    text-align: center;
+    max-width: 190px;
+    max-height: 50px;
+    border: 1px solid $color-black;
+
+    &:hover {
+        border-radius: 30px;
+        transition:0.2ms;
+    }
+}
+
+.h6 {
+    font-family: $sub-font;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-black;
+}
+
+.h7 {
+    font-family: $sub-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-text;
+}
+
+.h8 {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-sub;
+}
+
+.h9 {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-text;
+}
+
+.h10 {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-menu;
+}

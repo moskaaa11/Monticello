@@ -1,0 +1,254 @@
+.footer {
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 109px;
+        justify-content: space-between;
+
+        @media (max-width: $tab) {
+            margin-bottom: 30px;
+            justify-content: space-between;
+        }
+
+        &:first-child {
+            margin-bottom: 103px; 
+            align-items: center;
+            justify-content: flex-start;
+
+            @media (max-width: $tab) {
+                margin-bottom: 50px;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+    }
+
+    //first section
+
+    &__box{
+        margin-right: 30px;
+        position: relative;
+
+        @media (max-width: $tab) {
+            margin-right: 15px;
+        }
+
+        &:first-child {
+            margin-right: 350px;
+
+            @media (max-width: $tab) {
+                margin-right: 0;
+            }
+        }
+        
+    }
+
+
+    &__title {
+
+        @media (max-width: $tab) {
+            text-align: center;
+        }
+    }
+
+    &__learn {
+        border: 1px solid $color-button;
+        background: $color-learn;
+        cursor: pointer;
+        color: $color-button;
+
+        @media (max-width: $tab) {
+            margin-left: -120px;
+        }
+
+        &:hover {
+            background: $color-learnA;
+        }
+    }
+
+    &__button {
+        gap: 20px;
+        border: 1px solid $color-link;
+        background: $color-button;
+        cursor: pointer;
+        color: $color-text;
+        position: absolute;
+        top: -28px;
+
+        @media (max-width: $tab) {
+            gap: 5px;
+            margin-top: 8px;
+            margin-left: 20px;
+        }
+
+        &-active{
+            z-index: -2;
+            gap: 20px;
+            border: 1px solid $color-link;
+            background: $color-link;
+            cursor: pointer;
+            color: $color-button;
+            position: absolute;
+            top: -28px;
+
+            @media (max-width: $tab) {
+                margin-top: 8px;
+                margin-left: 20px;
+                gap: 5px;
+            }
+        }
+
+        &:hover{
+            transition: 0.001ms;
+            opacity: 0;
+        }
+    }
+
+    &__arrow {
+        width: 20px;
+
+        @media (max-width: $tab) {
+            width: 10px;
+        }
+
+        &-active {
+            width: 20px;
+
+            @media (max-width: $tab) {
+                width: 10px;
+            }
+        }
+    }
+
+    //second section
+
+    &__boxes{
+        display: flex;
+        flex-direction: column;
+        max-width: 275px;
+
+        @media (max-width: $tab) {
+            max-width: 70px;
+        }
+
+        &:first-child{
+
+            @media (max-width: $tab) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__sub {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 62px;
+
+        @media (max-width: $tab) {
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__logo {
+        width: 49px;
+
+        @media (max-width: $tab) {
+            width: 15px;
+        }
+    }
+
+    &__address{
+        margin-bottom: 10px;
+
+        @media (max-width: $tab) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__text{
+        margin-bottom: 10px;
+
+        @media (max-width: $tab) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__sub-title{
+        margin-bottom: 30px;
+
+        @media (max-width: $tab) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media (max-width: $tab) {
+            gap:5px;
+        }
+        
+
+        &-link {
+            cursor: pointer;
+            &:hover {
+            color: $color-nav;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        position: relative;
+        gap: 65px;
+        cursor: pointer;
+
+        @media (max-width: $tab) {
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        &-gray {
+            position: absolute;
+            width: 50px;
+
+            @media (max-width: $tab) {
+                width: 20px;
+            }
+
+            &:hover {
+                display: none;
+                transition: 0.001ms;
+            }
+            
+        }
+
+        &-white {
+            position: absolute;
+            width: 50px;
+            opacity: 0;
+
+            @media (max-width: $tab) {
+                width: 20px;
+            }
+
+            &:hover {
+                opacity: 1;
+                transition: 0.001ms;
+            }
+        }
+    }
+
+    //third section
+
+    &__copyright {
+        max-width: 275px;
+        
+    }
+}
