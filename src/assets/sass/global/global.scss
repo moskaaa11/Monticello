@@ -5,11 +5,6 @@ body {
 
 .container {
     margin:0 auto;
-    max-width: 1600px;
-
-    @media (max-width: $tab) {
-        margin: 0 16px;
-    }
 }   
 
 .menu {
@@ -17,7 +12,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: $color-menu;
 }
 
 .h1 {
@@ -34,7 +28,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    letter-spacing: 0.3em;
     color: $color-menu;
 }
 
@@ -69,8 +62,8 @@ body {
     line-height: 17px;
     color: $color-black;
     text-align: center;
-    max-width: 190px;
-    max-height: 50px;
+    width: 190px;
+    height: 50px;
     border: 1px solid $color-black;
 
     &:hover {
@@ -117,5 +110,13 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: $color-menu;
+    color: $color-sub;
+}
+
+.h11 {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $color-text;
 }
