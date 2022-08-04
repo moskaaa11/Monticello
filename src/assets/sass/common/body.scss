@@ -190,9 +190,52 @@
 
     &__container {
         background: $color-menu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     &__border {
-        border: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
+        width: 100px;
+        position: absolute;
+        margin-bottom: 30px;
+        left: 56px;
+        top: -33px;
+    }
+
+    &__box {
+        
+        &:first-child {
+            margin-top: 180px;
+            position: relative;
+            margin-bottom: 81px;
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &-item {
+            display: flex;
+            flex-wrap: wrap;
+
+            &--img {
+                max-width: 285px;
+            }
+        }
+
+        &-img {
+            max-width: 580px;
+
+        }
+    }
+
+    &__button {
+        color: $color-text;
     }
 }
